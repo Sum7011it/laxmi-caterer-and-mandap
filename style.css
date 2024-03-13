@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    /* background-color: rgb(36, 40, 38); */
+    /* background-color: aquamarine; */
+
+}
+.bgimg{
+    background-image: url('./slider/bg.webp');
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image within the container */
+    height: 100%; /* Make the container fill the entire viewport height */
+    display: flex; /* Use flexbox to center content vertically */
+    flex-direction: column; /* Stack content vertically */
+    /* justify-content: center; Center content vertically */
+    /* align-items: center; Center content horizontally */
+    color: black; /* Set text color to contrast with the background */
+    /* text-align: center; Center-align text */
+}
+
+
+@media screen and (min-width:1024px) {
+    .mynavbar{
+        margin-top: 0px;
+        height: 15vh;
+    }
+    .logo{
+        height: 10vh;
+    }
+    #slider{
+        width: 100%;
+        height: 90vh;
+        /* margin-bottom: 10vh; */
+    }
+    #slider h5{
+        color: white;
+        font-weight: 700;
+    }
+    #slider p{
+        color: white;
+        font-weight: 500;
+    }
+    .carousel-item img{
+        height: 90vh;
+    }
+    #services{
+        margin-top: 5vh;
+        /* background-color: rgb(237, 243, 229); */
+    }
+    #services h3{
+        margin-top: 5vh;
+    }
+    #services .card{
+        height: 75vh;
+        margin: 20px;
+    }
+    #services .card:hover{
+        box-shadow: 10px 10px gray;
+        cursor: pointer;
+        transition: all 0.3s linear;
+    }
+    #services .card img{
+        height: 50vh;
+    }
+    .card-body h5{
+        font-weight: 700;
+    }
+    #about{
+        width: 100%;
+    }
+    .about{
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+    }
+    .about img{
+        width: 40vw;
+        padding-right: 20px;
+    }
+    .about img:hover{
+        border-radius: 0px 40px 0px 0px ;
+        box-shadow: 10px 10px grey;
+        transition: all 0.3s linear;
+    }
+    .right p{
+        width: 120vh;
+        padding-left: 12px;
+    }
+    #gallery{
+        width: 100%;
+    }
+    .pics{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pics img{
+        margin-left: 3vw;
+        padding: 15px;
+        height: 55vh;
+        width: 45vw;
+    }
+    .cardDetail{
+        width: 60vw;
+        padding: 32px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 11px;
+        position: fixed;
+        top: 4%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, 40%);
+        color: black;
+        background-color: rgb(198, 215, 209);
+    }
+    .cardDetail img{
+        /* width: 40vw; */
+        height: 40vh;
+        margin-bottom: 10px;
+    }
+    .cardDetail i{
+        position: absolute;
+        left: 1px;
+        top: 1px;
+        font-size: 25px;
+        padding: 11px;
+        cursor: pointer;
+    }
+    #contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5vh;
+    }
+    #contact form{
+        width: 60vw;
+    }
+    #last{
+        padding-top: 5vh;
+        color: #fff;
+    }
+    #last li{
+        list-style-type: none;
+        padding-top: 10px;
+    }
+    #last li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+}
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .mynavbar{
+        margin-top: 0px;
+        height: 15vh;
+    }
+    .logo{
+        height: 10vh;
+    }
+    /* slider */
+    #slider{
+        width: 100%;
+        height: 90vh;
+        margin-bottom: 10vh;
+    }
+    .carousel-item img{
+        height: 90vh;
+    }
+    /* services */
+    #services{
+        padding-top: 5vh;
+    }
+    #services .card{
+        height: 80vh;
+        margin: 20px;
+    }
+    #services .card:hover{
+        box-shadow: 10px 10px gray;
+        cursor: pointer;
+        transition: all 0.3s linear;
+    }
+    #services .card img{
+        height: 50vh;
+    }
+    .card-body h5{
+        font-weight: 700;
+    }
+    /* about us */
+    #about{
+        width: 100%;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .about img{
+        width: 100%;
+    }
+    .about img:hover{
+        border-radius: 0px 40px 0px 0px ;
+        box-shadow: 10px 10px grey;
+        transition: all 0.3s linear;
+    }
+    .right p{
+        padding-top: 10px;
+        padding-left: 12px;
+    }
+    /* gallery */
+    #gallery{
+        width: 100%;
+    }
+    .pics{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pics img{
+        margin-left: 3vw;
+        padding: 15px;
+        height: 55vh;
+        width: 45vw;
+    }
+    .cardDetail{
+        width: 60vw;
+        padding: 32px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 11px;
+        position: fixed;
+        top: 4%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, 40%);
+        color: black;
+        background-color: rgb(198, 215, 209);
+    }
+    .cardDetail img{
+        /* width: 40vw; */
+        height: 40vh;
+        margin-bottom: 10px;
+    }
+    .cardDetail i{
+        position: absolute;
+        left: 1px;
+        top: 1px;
+        font-size: 25px;
+        padding: 11px;
+        cursor: pointer;
+    }
+    /* contact form */
+    #contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5vh;
+    }
+    #contact form{
+        width: 60vw;
+    }
+    /* footer */
+    #last{
+        padding-top: 5vh;
+        color: #fff;
+    }
+    #last li{
+        list-style-type: none;
+        padding-top: 10px;
+    }
+    #last li a{
+        text-decoration: none;
+        color: #fff;
+    }
+}
+@media screen and (max-width:766px) {
+    /* nav */
+    .mynavbar{
+        margin-top: 0px;
+        height: 15vh;
+    }
+    .logo{
+        height: 10vh;
+    }
+    /* slider */
+    #slider{
+        width: 100%;
+        height: 60vh;
+        margin-bottom: 10vh;
+    }
+    .carousel-item img{
+        height: 60vh;
+    }
+    /* services */
+    #services{
+        padding-top: 5vh;
+    }
+    #services .card{
+        height: 70vh;
+        margin: 20px;
+    }
+    #services .card:hover{
+        box-shadow: 10px 10px gray;
+        cursor: pointer;
+        transition: all 0.3s linear;
+    }
+    #services .card img{
+        height: 50vh;
+    }
+    .card-body h5{
+        font-weight: 700;
+    }
+    /* about us */
+    #about{
+        width: 100%;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .about img{
+        width: 99%;
+        
+    }
+    .about img:hover{
+        border-radius: 0px 40px 0px 0px ;
+        box-shadow: 10px 10px grey;
+        transition: all 0.3s linear;
+    }
+    .right p{
+        padding-top: 10px;
+        padding-left: 12px;
+    }
+    /* gallery */
+    #gallery{
+        width: 100%;
+        margin: auto;
+    }
+    .pics{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        /* flex-wrap: wrap; */
+    }
+    .pics img{
+        margin-left: 3vw;
+        padding: 15px;
+        height: 50vh;
+        width: 85vw;
+    }
+    .cardDetail{
+        width: fit-content;
+        padding: 32px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 11px;
+        position: fixed;
+        top: 4%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, 40%);
+        color: black;
+        background-color: rgb(198, 215, 209);
+    }
+    .cardDetail img{
+        /* width: 40vw; */
+        height: 20vh;
+        margin-bottom: 10px;
+    }
+    .cardDetail i{
+        position: absolute;
+        left: 1px;
+        top: 1px;
+        font-size: 25px;
+        padding: 11px;
+        cursor: pointer;
+    }
+    /* contact us */
+    #contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5vh;
+    }
+    #contact form{
+        width: 60vw;
+    }
+    /* footer */
+    #last{
+        padding-top: 5vh;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+    #last iframe{
+        height: 30vh;
+        width: 70vw;
+    }
+    #last li{
+        list-style-type: none;
+        padding-top: 10px;
+    }
+    #last li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .row h3{
+        padding-top: 2vh;
+        font-weight: 700;
+    }
+}
